@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="btn_text">Enviar</string>
+    <string name="txt_view">Formulario</string>
+    <string name="txt_view_2">Nombre y apellidos</string>
+    <string name="txt_edit">Escribe algo...</string>
+    <string name="txt_view_3">Dni</string>
+    <string name="txt_view_4">Nacionalidad</string>
+    <string-array name="nacionalidades">
+        <item>Español</item>
+        <item>Inglés</item>
+        <item>Ruso</item>
+        <item>Alemán</item>
+        <item>Danés</item>
+        <item>Japonés</item>
+    </string-array>
+    <string name="txt_view_5">Correo electrónico</string>
+    <string name="txt_view_6">Suscribirse al boletín de noticias</string>
+    <string name="txt_view_actividad_principal">Bienvenido a esta aplicación</string>
+    <string name="btn_formulario_actividad_principal">FORMULARIO</string>
+    <string name="btn_email_actividad_principal">MANDAR EMAIL</string>
+    <string name="txt_view_envio_completado">Envío completado</string>
+    <string name="nombre">-Nombre: </string>
+    <string name="dni">-Dni: </string>
+    <string name="suscripcion">-Suscripción: </string>
+    <string name="correo">-Correo electrónico: </string>
+    <string name="datos">Datos:</string>
+    <string name="nacionalidad">-Nacionalidad</string>
+    <string name="titulo_activity_email">Enviar Email</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="btn_base_de_datos">Base de Datos</string>
+    <string name="bbdd">Base de Datos</string>
+</resources>

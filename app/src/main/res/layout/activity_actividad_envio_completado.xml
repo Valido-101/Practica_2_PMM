@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividad_envio_completado"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_view_envio_completado"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/datos"
+        />
+
+    <TextView
+        android:id="@+id/datos_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        />
+
+    <TextView
+        android:id="@+id/datos_dni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dni"
+        />
+
+    <TextView
+        android:id="@+id/datos_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        />
+
+    <TextView
+        android:id="@+id/datos_nacionalidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nacionalidad"
+        />
+
+    <TextView
+        android:id="@+id/datos_suscripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/suscripcion"
+        />
+
+</LinearLayout>
