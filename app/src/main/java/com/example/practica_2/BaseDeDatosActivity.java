@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -49,17 +50,18 @@ public class BaseDeDatosActivity extends Activity implements ListView.OnItemLong
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
-        //Obtenemos el textview que contiene el id del registro
-        TextView txt_view = (TextView) view.findViewById(R.id.bbdd_id);
-
         //Ejecutamos el método eliminarDatos de la clase BaseDeDatos
-        bbdd.eliminarDatos(txt_view.getText().toString());
+        bbdd.eliminarDatos(String.valueOf(id));
 
         //Borramos el registro del listview en la posición indicada
         datos_bbdd.remove(position);
 
         //Notificamos al adaptador de que los datos de origen se han modificado
         adaptador.notifyDataSetChanged();
+
+        //Creamos el mensaje que se muestra al eliminar un elemento
+        Toast message_eliminado = Toast.makeText(getApplicationContext(),"Eliminado elemento on id: "+id,Toast.LENGTH_SHORT);
+        message_eliminado.show();
 
         return true;
     }
