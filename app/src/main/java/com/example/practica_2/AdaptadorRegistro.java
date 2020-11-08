@@ -40,6 +40,7 @@ public class AdaptadorRegistro extends BaseAdapter {
             convertView = inflater.inflate(R.layout.plantilla_activity_bbdd,parent,false);
         }
 
+        //Obtenemos todos los TextView que hay en la plantilla
         TextView id = convertView.findViewById(R.id.bbdd_id);
         TextView nombre = convertView.findViewById(R.id.bbdd_nombre);
         TextView dni = convertView.findViewById(R.id.bbdd_dni);
@@ -47,6 +48,7 @@ public class AdaptadorRegistro extends BaseAdapter {
         TextView nacionalidad = convertView.findViewById(R.id.bbdd_nacionalidad);
         TextView boletin = convertView.findViewById(R.id.bbdd_boletin_noticias);
 
+        //Rellenamos cada textview con el valor del elemento en la posicion concreta del arraylist
         id.setText(String.valueOf(listaRegistros.get(position).getId()));
         nombre.setText(listaRegistros.get(position).getNombre());
         dni.setText(listaRegistros.get(position).getDni());
@@ -54,6 +56,7 @@ public class AdaptadorRegistro extends BaseAdapter {
         nacionalidad.setText(listaRegistros.get(position).getNacionalidad());
         boletin.setText(listaRegistros.get(position).getBoletin());
 
+        //Devolvemos la vista
         return convertView;
     }
 

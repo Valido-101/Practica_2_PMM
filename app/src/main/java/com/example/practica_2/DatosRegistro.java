@@ -9,8 +9,18 @@ public class DatosRegistro {
     private String nacionalidad;
     private String boletin;
 
-    // Constructor
+    // Constructor sin id
     public DatosRegistro(String nombre, String dni, String correo, String nacionalidad, String boletin){
+        this.nombre = nombre;
+        this.dni = dni;
+        this.correo = correo;
+        this.nacionalidad = nacionalidad;
+        this.boletin = boletin;
+    }
+
+    //Constructor con id
+    public DatosRegistro(int id,String nombre, String dni, String correo, String nacionalidad, String boletin){
+        this.id=id;
         this.nombre = nombre;
         this.dni = dni;
         this.correo = correo;
